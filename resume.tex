@@ -3,10 +3,10 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=2 cm, % seperation between body and page edge from the top
-    bottom=2 cm, % seperation between body and page edge from the bottom
-    left=2 cm, % seperation between body and page edge from the left
-    right=2 cm, % seperation between body and page edge from the right
+    top=1.5 cm, % seperation between body and page edge from the top
+    bottom=1.5 cm, % seperation between body and page edge from the bottom
+    left=1.5 cm, % seperation between body and page edge from the left
+    right=1.5 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
@@ -152,236 +152,189 @@
 
 
 \begin{document}
-    \newcommand{\AND}{\unskip
-        \cleaders\copy\ANDbox\hskip\wd\ANDbox
-        \ignorespaces
-    }
-    \newsavebox\ANDbox
-    \sbox\ANDbox{$|$}
+\newcommand{\AND}{\unskip
+	\cleaders\copy\ANDbox\hskip\wd\ANDbox
+	\ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{$|$}
 
-    \begin{header}
-        \fontsize{25 pt}{25 pt}\selectfont John Doe
+\begin{header}
+	\fontsize{25 pt}{25 pt}\selectfont Nick Brodeur
+			
+	\vspace{2 pt}
+			
+	\normalsize
+	\mbox{Brooklyn, NY}%
+	\kern 5.0 pt%
+	\AND%
+	\kern 5.0 pt%
+	\mbox{\hrefWithoutArrow{mailto:nicholasbrodeur@outlook.com}{nicholasbrodeur@outlook.com}}%
+	\kern 5.0 pt%
+	\AND%
+	\kern 5.0 pt%
+	\mbox{\hrefWithoutArrow{tel:+1-530-510-6126}{+1 (530) 510-6126}}%
+	\kern 5.0 pt%
+	\AND%
+	\kern 5.0 pt%
+	\mbox{\hrefWithoutArrow{https://nickbrodeur.com/}{nickbrodeur.com}}%
+	\kern 5.0 pt%
+	\AND%
+	\kern 5.0 pt%
+	\mbox{\hrefWithoutArrow{https://www.linkedin.com/in/nicholasbrodeur/}{linkedin.com/in/nicholasbrodeur/}}%
+	\kern 5.0 pt%
+	\AND%
+	\kern 5.0 pt%
+	\mbox{\hrefWithoutArrow{https://github.com/ncale}{github.com/ncale}}%
+\end{header}
 
-        \vspace{5 pt}
-
-        \normalsize
-        \mbox{Your Location}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{mailto:youremail@yourdomain.com}{youremail@yourdomain.com}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{tel:+90-541-999-99-99}{0541 999 99 99}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://yourwebsite.com/}{yourwebsite.com}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://linkedin.com/in/yourusername}{linkedin.com/in/yourusername}}%
-        \kern 5.0 pt%
-        \AND%
-        \kern 5.0 pt%
-        \mbox{\hrefWithoutArrow{https://github.com/yourusername}{github.com/yourusername}}%
-    \end{header}
-
-    \vspace{5 pt - 0.3 cm}
-
-
-    \section{Introduction}
+\vspace{5 pt - 0.3 cm}
 
 
 
-        
-        \begin{onecolentry}
-            \href{https://rendercv.com}{RenderCV} is a LaTeX-based CV/resume version-control and maintenance app. It allows you to create a high-quality CV or resume as a PDF file from a YAML file, with \textbf{Markdown syntax support} and \textbf{complete control over the LaTeX code}.
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{onecolentry}
-            The boilerplate content was inspired by \href{https://github.com/dnl-blkv/mcdowell-cv}{Gayle McDowell}.
-        \end{onecolentry}
-
-
+\section{About}
     
-    \section{Quick Guide}
-
-    \begin{onecolentry}
-        \begin{highlightsforbulletentries}
-
-
-        \item Each section title is arbitrary and each section contains a list of entries.
-
-        \item There are 7 unique entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
-
-        \item Select a section title, pick an entry type, and start writing your section!
-
-        \item \href{https://docs.rendercv.com/user_guide/}{Here}, you can find a comprehensive user guide for RenderCV.
-
-
-        \end{highlightsforbulletentries}
-    \end{onecolentry}
-
-    \section{Education}
+\begin{onecolentry}
+	Innovative and adaptable product engineer / developer with 2 years of experience, including 1.5 years at Deloitte Consulting and 8 months de- veloping impactful projects in and out of the web3 space. I'm passionate about blockchain technology and its applications, and am seeking a Product Engineer role to apply my technical skills and love for product development.
+\end{onecolentry}
 
 
 
-        
-        \begin{twocolentry}{
-            Sept 2000 – May 2005
-        }
-            \textbf{University of Pennsylvania}, BS in Computer Science\end{twocolentry}
+\section{Experience}
 
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item GPA: 3.9/4.0 (\href{https://example.com}{a link to somewhere})
-                \item \textbf{Coursework:} Computer Architecture, Comparison of Learning Algorithms, Computational Theory
-            \end{highlights}
-        \end{onecolentry}
+\begin{twocolentry}
+	{Jan 2024 - Present}
+	\textbf{Product Developer}, Independent -- Remote\end{twocolentry}
 
+	\vspace{0.10 cm}
+	\begin{onecolentry}
+		\begin{highlights}
+			\item Reduced time to render user buddy lists by 75\% by implementing a prediction algorithm
+			\item Integrated iChat with Spotlight Search by creating a tool to extract metadata from saved chat transcripts and provide metadata to a system-wide search database
+			\item Redesigned chat file format and implemented backward compatibility for search
+		\end{highlights}
+	\end{onecolentry}
 
+	\vspace{0.2 cm}
 
-    
-    \section{Experience}
+	\begin{twocolentry}{
+			Aug 2022 – Jan 2024
+		}
+		\textbf{Consulting Analyst}, Deloitte Consulting -- Chicago, IL\end{twocolentry}
 
-
-
-        
-        \begin{twocolentry}{
-            June 2005 – Aug 2007
-        }
-            \textbf{Software Engineer}, Apple -- Cupertino, CA\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Reduced time to render user buddy lists by 75\% by implementing a prediction algorithm
-                \item Integrated iChat with Spotlight Search by creating a tool to extract metadata from saved chat transcripts and provide metadata to a system-wide search database
-                \item Redesigned chat file format and implemented backward compatibility for search
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            June 2003 – Aug 2003
-        }
-            \textbf{Software Engineer Intern}, Microsoft -- Redmond, WA\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Designed a UI for the VS open file switcher (Ctrl-Tab) and extended it to tool windows
-                \item Created a service to provide gradient across VS and VS add-ins, optimizing its performance via caching
-                \item Built an app to compute the similarity of all methods in a codebase, reducing the time from $\mathcal{O}(n^2)$ to $\mathcal{O}(n \log n)$
-                \item Created a test case generation tool that creates random XML docs from XML Schema
-                \item Automated the extraction and processing of large datasets from legacy systems using SQL and Perl scripts
-            \end{highlights}
-        \end{onecolentry}
+		\vspace{0.10 cm}
+		\begin{onecolentry}
+			\begin{highlights}
+				\item Created a model for evaluating cost and full-time hours for global payroll transformations to estimate vendor spend and make critical country deployment decisions
+				\item Created a service to provide gradient across VS and VS add-ins, optimizing its performance via caching
+				\item Built an app to compute the similarity of all methods in a codebase, reducing the time from $\mathcal{O}(n^2)$ to $\mathcal{O}(n \log n)$
+				\item Created a test case generation tool that creates random XML docs from XML Schema
+				\item Automated the extraction and processing of large datasets from legacy systems using SQL and Perl scripts
+			\end{highlights}
+		\end{onecolentry}
+	\end{twocolentry}
+\end{twocolentry}
 
 
 
-    
-    \section{Publications}
+\section{Projects}
+
+\begin{twocolentry}{\href{https://github.com/sinaatalay/rendercv}{repo}}
+	\textbf{Jelly Beans}\end{twocolentry}
+
+	\vspace{0.10 cm}
+
+	\begin{onecolentry}
+		\begin{highlights}
+			\item Developed a game where users can predict the amount of something happening onchain for OP tokens. The initial funding came from the Optimism Foundation
+			\item Tools Used: Next.js, Ponder.sh, Solidity
+		\end{highlights}
+	\end{onecolentry}
+
+
+	\vspace{0.2 cm}
+
+	\begin{twocolentry}{
+			\href{https://github.com/sinaatalay/rendercv}{repo}
+		}
+		\textbf{Wannabet}\end{twocolentry}
+								
+		\vspace{0.10 cm}
+		\begin{onecolentry}
+			\begin{highlights}
+				\item Developed a DApp where users can make peer-to-peer bets on a small and personal scale. 
+				\item Tools Used: Next.js, Ponder.sh, Solidity
+			\end{highlights}
+		\end{onecolentry}
+	\end{twocolentry}
+							
+							
+	\vspace{0.2 cm}
+							
+	\begin{twocolentry}{
+			\href{https://github.com/sinaatalay/rendercv}{repo}
+		}
+		\textbf{fightIQ}\end{twocolentry}
+										
+		\vspace{0.10 cm}
+		\begin{onecolentry}
+			\begin{highlights}
+				\item Platform for pro MMA data, analytics, \& tools
+				\item Tools Used: Next.js, Express.js, MongoDB
+			\end{highlights}
+		\end{onecolentry}
+	\end{twocolentry}
+									
+									
+	\vspace{0.2 cm}
+									
+	\begin{twocolentry}{
+			2024
+		}
+		\textbf{Optimism GovScore}\end{twocolentry}
+		                                    
+		\vspace{0.10 cm}
+		\begin{onecolentry}
+			\begin{highlights}
+				\item 
+				\item Tools Used: Next.js, Ponder.sh
+			\end{highlights}
+		\end{onecolentry}
+	\end{twocolentry}
+	
+	
+\end{twocolentry}
 
 
 
-        
-        \begin{samepage}
-            \begin{twocolentry}{
-                Jan 2004
-            }
-                \textbf{3D Finite Element Analysis of No-Insulation Coils}
-            \end{twocolentry}
-
-            \vspace{0.10 cm}
-            
-            \begin{onecolentry}
-                \mbox{Frodo Baggins}, \mbox{\textbf{\textit{John Doe}}}, \mbox{Samwise Gamgee}
-
-                \vspace{0.10 cm}
-                
-        \href{https://doi.org/10.1109/TASC.2023.3340648}{10.1109/TASC.2023.3340648}
-        \end{onecolentry}
-        \end{samepage}
-
-
-    
-    \section{Projects}
+\section{Education}
+										
+\begin{twocolentry}{
+		Aug 2018 – May 2022
+	}
+	\textbf{University of Tennessee}, BS in Business Analytics \& Statistics\end{twocolentry}
+													
+	\vspace{0.10 cm}
+	\begin{onecolentry}
+		\begin{highlights}
+			\item GPA: 3.9/4.0 (\href{https://example.com}{a link to somewhere})
+			\item \textbf{Coursework:} Data Mining, Programming Database Applications, User-Centered Design 
+		\end{highlights}
+	\end{onecolentry}
+\end{twocolentry}
 
 
 
-        
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Multi-User Drawing Tool}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard" with each person's edits synchronized
-                \item Tools Used: C++, MFC
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            \href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}
-        }
-            \textbf{Synchronized Desktop Calendar}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Developed a desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users
-                \item Tools Used: C\#, .NET, SQL, XML
-            \end{highlights}
-        \end{onecolentry}
-
-
-        \vspace{0.2 cm}
-
-        \begin{twocolentry}{
-            2002
-        }
-            \textbf{Custom Operating System}\end{twocolentry}
-
-        \vspace{0.10 cm}
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Built a UNIX-style OS with a scheduler, file system, text editor, and calculator
-                \item Tools Used: C
-            \end{highlights}
-        \end{onecolentry}
-
-
-
-    
-    \section{Technologies}
-
-
-
-        
-        \begin{onecolentry}
-            \textbf{Languages:} C++, C, Java, Objective-C, C\#, SQL, JavaScript
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-
-        \begin{onecolentry}
-            \textbf{Technologies:} .NET, Microsoft SQL Server, XCode, Interface Builder
-        \end{onecolentry}
-
-
-    
-
+\section{Technologies}
+                                                
+\begin{onecolentry}
+    \textbf{Languages:} Typescript, Solidity, Python, Basic shell scripting
+\end{onecolentry}
+                                                
+\vspace{0.2 cm}
+                                                
+\begin{onecolentry}
+    \textbf{Technologies:} Next.js/Astro/React, Figma
+\end{onecolentry}
+													
 \end{document}
