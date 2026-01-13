@@ -3,10 +3,10 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=1.5 cm, % seperation between body and page edge from the top
-    bottom=1.5 cm, % seperation between body and page edge from the bottom
-    left=1.5 cm, % seperation between body and page edge from the left
-    right=1.5 cm, % seperation between body and page edge from the right
+    top=1.0 cm, % seperation between body and page edge from the top
+    bottom=1.0 cm, % seperation between body and page edge from the bottom
+    left=1.0 cm, % seperation between body and page edge from the left
+    right=1.0 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
     % showframe % for debugging 
 ]{geometry} % for adjusting page geometry
@@ -160,76 +160,120 @@
 \sbox\ANDbox{$|$}
 
 \begin{header}
-	\fontsize{25 pt}{25 pt}\selectfont Nick Brodeur
-	
+	\fontsize{22 pt}{22 pt}\selectfont Nick Brodeur
+
 	\vspace{2 pt}
-	
-	\normalsize
-	\mbox{Brooklyn, NY}%
-	\kern 5.0 pt%
-	\AND%
-	\kern 5.0 pt%
-	\mbox{\hrefWithoutArrow{mailto:nicholasbrodeur@outlook.com}{nicholasbrodeur@outlook.com}}%
-	\kern 5.0 pt%
-	\AND%
-	\kern 5.0 pt%
-	\mbox{\hrefWithoutArrow{tel:+1-530-510-6126}{+1 (530) 510-6126}}%
-	\kern 5.0 pt%
-	\AND%
-	\kern 5.0 pt%
-	\mbox{\hrefWithoutArrow{https://nickbrodeur.com/}{nickbrodeur.com}}%
-	\kern 5.0 pt%
-	\AND%
-	\kern 5.0 pt%
-	\mbox{\hrefWithoutArrow{https://www.linkedin.com/in/nicholasbrodeur/}{linkedin.com/in/nicholasbrodeur/}}%
-	\kern 5.0 pt%
-	\AND%
-	\kern 5.0 pt%
-	\mbox{\hrefWithoutArrow{https://github.com/ncale}{github.com/ncale}}%
+    
+    \normalsize
+    \mbox{Chicago, IL}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{mailto:nicholasbrodeur9@gmail.com}{nicholasbrodeur9@gmail.com}}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{tel:+1-530-510-6126}{+1.530.510.6126}}%
+    \kern 5.0 pt%
+
+    \vspace{0 pt}
+    \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/nicholasbrodeur/}{linkedin.com/in/nicholasbrodeur/}}%
+    \kern 5.0 pt%
+    \AND%
+    \kern 5.0 pt%
+    \mbox{\hrefWithoutArrow{https://github.com/ncale}{github.com/ncale}}%
 \end{header}
 
-\vspace{5 pt - 0.3 cm}
 
 
-
-\section{About}
-    
-\begin{onecolentry}
-	Independent developer and software engineer with 1.5 years of consulting experience and 1 year of product development, building web3 and AI solutions. Seeking a role in software or product development, focusing on AI, machine learning, and web technologies.
-\end{onecolentry}
-
-
-
+\vspace{8 pt - 0.3 cm}
 \section{Experience}
 
-\begin{twocolentry}{Jan 2024 - Present}
-    \textbf{Independent Developer} -- Remote
+\begin{twocolentry}{Jun 2025 - Present}
+    \textbf{Founder / Developer}, Challenger Fantasy
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+\begin{highlights}
+    \item Architected a high-concurrency realtime data pipeline using automated web scraping and scheduled cron jobs to ingest and process combat sports data with minimal latency.
+    \item Engineered a multi-tier caching strategy across the database, API, and application layers for minimal query latency.
+    \item Developed a serverless drafting engine designed for horizontal scalability, allowing the platform to handle rapid spikes in user traffic during live events.
+    \item Implemented complex data modeling to manage calculated and derived statistics, ensuring data consistency across a React web dashboard and a React Native mobile application.
+    \item Optimized backend performance by implementing efficient indexing and data retrieval patterns to support realtime updates for thousands of concurrent users.
+\end{highlights}
+\end{onecolentry}
+
+\vspace{0.3 cm}
+
+\begin{twocolentry}{Feb 2025 - Jun 2025}
+    \textbf{Fullstack Developer}, Mamo.bot
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+\begin{highlights}
+    \item Engineered a secure authentication and onboarding pipeline, focusing on identity verification and data encryption.
+    \item Developed a custom Telegram OAuth integration allowing users to link external social accounts for automated identity verification and account security.
+    \item Streamlined user acquisition by optimizing the onboarding flow, reducing friction in the multi-step registration and wallet-linking process.
+\end{highlights}
+\end{onecolentry}
+
+\vspace{0.3 cm}
+
+\begin{twocolentry}{Oct 2024 - Mar 2025}
+    \textbf{Fullstack Developer}, Tribes Inc.
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+\begin{highlights}
+    \item Built a persistent realtime chat system using WebSockets, supporting rich media features including reactions, image/GIF processing, and dynamic link previews.
+    \item Designed a cross-platform notification engine utilizing Firebase Cloud Messaging (FCM) and the Browser Notification API to deliver instant alerts for price volatility and social activity.
+    \item Integrated automated Telegram alerts by developing an OAuth-based authorization flow.
+    \item Contributed to the "eliza" AI Agent Framework (Open Source), specifically engineering Telegram integration capabilities to expand the framework's communication layer.
+    \item Developed responsive, reactive UIs for mobile and desktop.
+\end{highlights}
+\end{onecolentry}
+
+\vspace{0.3 cm}
+
+\begin{twocolentry}{Jan 2024 - Oct 2024}
+    \textbf{Independent Developer}
 \end{twocolentry}	
 \vspace{0.10 cm}
 \begin{onecolentry}
 \begin{highlights}
     \item Developed multiple web3 and AI-based projects with live user transactions and grants received.
-    \item Built a custom GPT model for LBO analysis, enabling finance firms to automate key decision-making metrics (demo pending).
     \item Designed an SDK for ENS’s largest service provider, Namestone, later adopted as their official SDK, earning \$1K.
 \end{highlights}
 \end{onecolentry}
 
-\vspace{0.2 cm}
+\vspace{0.3 cm}
+
 \begin{twocolentry}{Aug 2022 – Jan 2024}
-    \textbf{Consulting Analyst}, Deloitte Consulting -- Chicago, IL
+    \textbf{Consulting Analyst}, Deloitte Consulting
 \end{twocolentry}
 \vspace{0.10 cm}
 \begin{onecolentry}
 \begin{highlights}
-    \item Created data models to estimate vendor costs and hours for global payroll transformations.
-    \item Automated large dataset processing using SQL and Python, improving operational efficiency.
-    \item Collaborated with cross-functional teams to design and implement software solutions.
+    \item Directed client-facing technical discovery and resource modeling for global initiatives, leveraging Excel modeling and Python-based data analytics to optimize resource allocation across large projects.
 \end{highlights}
 \end{onecolentry}
 
 
 
+\vspace{8 pt - 0.3 cm}
 \section{Projects}
+
+\begin{twocolentry}{\href{https://jellybeans.wtf}{2024}}
+    \textbf{Jelly Beans}
+\end{twocolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+\begin{highlights}
+    \item Built a crypto prediction game that has engaged over 300+ unique users and facilitated 1400+ transactions.
+\end{highlights}
+\end{onecolentry}
+
+\vspace{0.3 cm}
 
 \begin{twocolentry}{2024}
     \textbf{Optimism GovScore}
@@ -237,107 +281,26 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
 \begin{highlights}
-    \item Created a voting delegate ranking system for Optimism DAO. The tool ranks delegates based on voting patterns and behavior.
+    \item Created a web app that ranks Optimism DAO delegates based on voting patterns and behavior.
     \item Received a \$50K grant from Optimism for its contribution to governance.
-    \item Tools Used: Next.js, Ponder.sh
-\end{highlights}
-\end{onecolentry}
-
-\vspace{0.2 cm}
-
-\begin{twocolentry}{\href{https://namestone.com}{live}}
-    \textbf{Namestone SDK – ENS Service Provider}
-\end{twocolentry}
-\vspace{0.10 cm}
-\begin{onecolentry}
-\begin{highlights}
-    \item Developed a TypeScript SDK for ENS’s largest service provider, Namestone. The SDK became their official tool after positive reception.
-    \item Earned \$1k for the contribution and ongoing collaboration
-    \item Tools Used: TypeScript, NameStone API
-\end{highlights}
-\end{onecolentry}
-
-\vspace{0.2 cm}
-
-\begin{twocolentry}{\href{https://jellybeans.wtf}{live}}
-    \textbf{Jelly Beans - Crypto Prediction Game}
-\end{twocolentry}
-\vspace{0.10 cm}
-\begin{onecolentry}
-\begin{highlights}
-    \item Built a crypto prediction game that has engaged over 300+ unique users and facilitated 1400+ transactions.
-\item Tools Used: Next.js, Ponder.sh, Solidity
-\end{highlights}
-\end{onecolentry}
-
-\vspace{0.2 cm}
-
-\begin{twocolentry}{\href{https://wannabet.cc}{live}}
-    \textbf{Wannabet - P2P Betting DApp}
-\end{twocolentry}
-\vspace{0.10 cm}
-\begin{onecolentry}
-\begin{highlights}
-    \item Developed a peer-to-peer betting platform using cryptocurrency, handling 100+ transactions from 20+ users.
-    \item Tools Used: Next.js, Ponder.sh, Solidity
-\end{highlights}
-\end{onecolentry}
-
-\vspace{0.2 cm}
-
-\begin{twocolentry}{\href{https://github.com/sinaatalay/rendercv}{repo}}
-    \textbf{fightIQ}
-\end{twocolentry}
-\vspace{0.10 cm}
-\begin{onecolentry}
-\begin{highlights}
-    \item Platform for pro MMA data, analytics, \& tools
-    \item Tools Used: Next.js, Express.js, MongoDB
-\end{highlights}
-\end{onecolentry}
-
-\vspace{0.2 cm}
-
-\begin{twocolentry}{\href{https://github.com/privategpt}{demo}}
-    \textbf{Custom GPT LBO Model – Finance AI Tool}
-\end{twocolentry}
-\vspace{0.10 cm}
-\begin{onecolentry}
-\begin{highlights}
-    \item Created an AI tool for financial analysis, automating LBO model metrics for private equity firms.
-    \item Tools Used: LangChain, OpenAI API, Python
 \end{highlights}
 \end{onecolentry}
 
 
 
+\vspace{8 pt - 0.3 cm}
 \section{Education}
 
 \begin{twocolentry}{Aug 2018 – May 2022}
-    \textbf{University of Tennessee}, BS in Business Analytics \& Statistics
+    \textbf{University of Tennessee, Knoxville}, BS in Business Analytics \& Statistics
 \end{twocolentry}
-
 \vspace{0.10 cm}
-
 \begin{onecolentry}
 \begin{highlights}
-    \item GPA: 3.9/4.0
-    \item Coursework: Data Mining, Programming Information [Database] Applications, User-Centered Design
+    \item Studied information tech, data mining, and programming fundamentals (3.9/4.0 gpa)
 \end{highlights}
 \end{onecolentry}
 
 
-
-\section{Technologies}
-
-\begin{onecolentry}
-    \textbf{Languages:} Python, Typescript, Bash, SQL, Solidity
-\end{onecolentry}
-
-\vspace{0.2 cm}
-
-\begin{onecolentry}
-    \textbf{Technologies:} Next.js, React, LangChain, Figma, FastAPI, OpenAI API
-\end{onecolentry}
 
 \end{document}
