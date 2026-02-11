@@ -1,6 +1,14 @@
-# My Resume
+# Resume
 
 This repository contains the LaTeX source code for my resume.
+
+## Formatting
+
+I use [tex-fmt](https://github.com/WGUNDERWOOD/tex-fmt) for formatting the tex file.
+
+```shell
+tex-fmt resume.tex
+```
 
 ## Automated Build
 
