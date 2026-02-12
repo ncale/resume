@@ -14,7 +14,7 @@ tex-fmt resume.tex
 
 Every time a change is pushed to **master**, GitHub Actions automatically:
 
-1. Compiles `resume.tex` using LaTeX.
-2. Updates and pushes the latest `resume.pdf` directly to this repository.
+1. Compiles `resume.tex` to pdf using [latex-action](https://github.com/xu-cheng/latex-action).
+2. Commits and pushes the compiled result.
 
-The most up-to-date version is available here: [resume.pdf](https://ncale.github.io/resume/resume.pdf)
+The latest version is always available here: [resume.pdf](https://ncale.github.io/resume/resume.pdf)
