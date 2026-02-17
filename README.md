@@ -10,6 +10,14 @@ I use [tex-fmt](https://github.com/WGUNDERWOOD/tex-fmt) for formatting the tex f
 tex-fmt resume.tex
 ```
 
+## Building
+
+Use `pdflatex` for local builds.
+
+```shell
+pdflatex -output-directory=build resume.tex
+```
+
 ## Automated Build
 
 Every time a change is pushed to **master**, GitHub Actions automatically:
