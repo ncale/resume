@@ -199,21 +199,21 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
 		\begin{highlights}
-		\item Built and launched a fantasy sports platform as sole technical founder; owned the
-				full stack from mobile app to backend infrastructure and data pipeline.
-		\item Engineered a serverless real-time draft system using \textbf{Cloudflare
-				Durable Objects}; implemented a stateful matchmaker that routes users to isolated
-				draft lobbies, which manages active players and orchestrates turn-based selection.
-		\item Designed an edge API layer with \textbf{Cloudflare Workers} to serve typed DTOs
-				with edge caching; optimized P99 response times from \textbf{$\sim$8s to $\sim$200ms} by using
-				summary tables / materialized views to pre-compute heavy athlete stat aggregations.
-		\item Built a distributed data ingest pipeline on \textbf{Google Cloud Run} via a job queue
-				that processed 19 years of historical sports
-				data and runs daily refresh jobs; enforces strong integrity across a structured
-				hierarchy of events, bouts, and athletes.
-		\item Architected a \textbf{Bun workspaces} monorepo spanning 8 shared packages, 4 frontend
-				apps, and 3 backend services; configured end-to-end typegen for database schemas and
-				API clients.
+		\item Engineered a serverless real-time draft system using \textbf{Cloudflare Durable Objects};
+				built a stateful matchmaker routing users into isolated draft lobbies, each
+				guaranteeing strongly-consistent turn-based state across all connected WebSocket clients.
+		\item Designed an edge API layer with \textbf{Cloudflare Workers} serving typed DTOs with
+				edge caching; reduced P99 response times \textbf{92.5\%} (from \textbf{$\sim$8s to $\sim$600ms})
+				by pre-computing athlete stat aggregations into summary tables and materialized views.
+		\item Built a distributed data ingest pipeline on \textbf{Google Cloud Run} processing
+				19 years of historical sports data; runs daily refresh jobs with enforced referential
+				integrity and idempotent upserts to handle upstream data corrections.
+		\item Architected a \textbf{Bun workspaces} monorepo enabling independent deployment of
+				\textbf{3 backend services} behind a shared type contract; configured end-to-end
+				typegen from database schemas to API clients.
+		\item Founded and shipped a fantasy sports platform end-to-end as technical founder;
+				designed the backend architecture, data infrastructure, and API layer now serving
+				83 MAU with a live demo at \textbf{challengerfantasy.com}.
 		\end{highlights}
 \end{onecolentry}
 
