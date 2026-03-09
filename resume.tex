@@ -3,8 +3,8 @@
 % Packages:
 \usepackage[
 		ignoreheadfoot, % set margins without considering header and footer
-		top=1.0 cm, % seperation between body and page edge from the top
-		bottom=1.0 cm, % seperation between body and page edge from the bottom
+		top=0.5 cm, % seperation between body and page edge from the top
+		bottom=0.5 cm, % seperation between body and page edge from the bottom
 		left=1.0 cm, % seperation between body and page edge from the left
 		right=1.0 cm, % seperation between body and page edge from the right
 		footskip=1.0 cm, % seperation between body and footer
@@ -186,7 +186,6 @@
 
 \end{header}
 
-\vspace{8 pt - 0.3 cm}
 \section{Work Experience}
 
 \begin{twocolentry}{Remote}
@@ -199,6 +198,9 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
 		\begin{highlights}
+		\item Built and launched a fantasy sports platform end-to-end as technical founder;
+				designed the backend architecture, data infrastructure, and API layer now serving
+				83 MAU with a live demo at \textbf{challengerfantasy.com}.
 		\item Engineered a serverless real-time draft system using \textbf{Cloudflare Durable Objects};
 				built a stateful matchmaker routing users into isolated draft lobbies, each
 				guaranteeing strongly-consistent turn-based state across all connected WebSocket clients.
@@ -208,12 +210,8 @@
 		\item Built a distributed data ingest pipeline on \textbf{Google Cloud Run} processing
 				19 years of historical sports data; runs daily refresh jobs with enforced referential
 				integrity and idempotent upserts to handle upstream data corrections.
-		\item Architected a \textbf{Bun workspaces} monorepo enabling independent deployment of
-				\textbf{3 backend services} behind a shared type contract; configured end-to-end
-				typegen from database schemas to API clients.
-		\item Founded and shipped a fantasy sports platform end-to-end as technical founder;
-				designed the backend architecture, data infrastructure, and API layer now serving
-				83 MAU with a live demo at \textbf{challengerfantasy.com}.
+		\item Architected a \textbf{Bun workspaces} monorepo; configured end-to-end typegen
+				from database schemas to API clients.
 		\end{highlights}
 \end{onecolentry}
 
@@ -235,7 +233,7 @@
 				serving as a critical spam-prevention barrier and account access layer.
 		\item Partnered with UX designers to implement a seamless onboarding and deposit flow,
 				achieving \$1.3M in total value locked.
-		\item Established \textbf{Sentry error tracking} on 5 deployed services; led bug
+		\item Established Sentry error tracking on 5 deployed services; led bug
 				classification and prioritization through production launch.
 		\end{highlights}
 \end{onecolentry}
@@ -328,8 +326,25 @@
 \begin{onecolentry}
 		\begin{highlights}
 		\item \textbf{Languages}: Typescript, Python, SQL; \textbf{Web
-				Development}: Next.js, React, PostgreSQL
-		\item \textbf{Others}: Git, Linux, Bash, DevOps, Cloudflare Workers
+				Frameworks}: Express, Hono, FastAPI, Next.js, React
+		\item \textbf{Infra}: Cloudflare Workers, serverless, Linux, Docker, Proxmox; \textbf{Tools}: Git,
+				Bash, GitHub Actions
+		\end{highlights}
+\end{onecolentry}
+
+\vspace{8 pt - 0.3 cm}
+\section{Selected Projects}
+
+\begin{onecolentry}
+		\textbf{artgg — Art Gallery Generator} [Rust, Python, SQLite, GitHub Actions]
+		\hrefWithoutArrow{}{[\textcolor{blue}{Code}]}
+\end{onecolentry}
+\vspace{0.10 cm}
+\begin{onecolentry}
+		\begin{highlights}
+		\item TUI that generates desktop wallpapers from open-access museum artwork, with local
+				caching and user configuration.
+		\item Implemented a release pipeline with GitHub Actions for one-line installation
 		\end{highlights}
 \end{onecolentry}
 
