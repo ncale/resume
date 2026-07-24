@@ -196,19 +196,18 @@
 		\begin{highlights}
 		\item Built and launched a fantasy sports platform end-to-end as technical founder;
 				designed the backend architecture, data infrastructure, API layer, and React Native
-				mobile app now serving
-				83 MAU at \textbf{challengerfantasy.com}.
-		\item Engineered a serverless real-time draft system using \textbf{Cloudflare Durable Objects};
-				built a stateful matchmaker routing users into isolated draft lobbies, each
-				guaranteeing strongly-consistent turn-based state across all connected WebSocket clients.
-		\item Designed an edge API layer with \textbf{Cloudflare Workers} serving typed DTOs with
-				edge caching; reduced P99 response times \textbf{92.5\%} (from \textbf{$\sim$8s to $\sim$600ms})
-				by pre-computing athlete stat aggregations into summary tables and materialized views.
-		\item Built a distributed data ingest pipeline on \textbf{Google Cloud Run} processing
-				19 years of historical sports data; runs daily refresh jobs with enforced referential
-				integrity and idempotent upserts to handle upstream data corrections.
-		\item Architected a \textbf{Bun workspaces} monorepo; configured end-to-end typegen
-				from database schemas to API clients.
+				mobile app currently serving 83 monthly active users.
+		\item Engineered a serverless real-time draft engine using \textbf{Cloudflare Durable
+				Objects} and \textbf{WebSockets}; includes matching concurrent users into draft
+				lobbies, each managing strongly-consistent turn-based state.
+		\item Designed a REST API and data layer; used edge caching, summary tables, and
+				materialized views to reduce P99 response times \textbf{92.5\%} (from
+				\textbf{$\sim$8s to $\sim$600ms}).
+		\item Built an ETL pipeline with \textbf{Google Cloud Run} for processing 19 years of
+				historical sports data with daily refresh jobs and idempotent upserts to handle
+				upstream data corrections.
+		\item Established a monorepo with end-to-end type generation from database schemas to
+				API clients, prioritizing maintainable and scalable code across the stack.
 		\end{highlights}
 \end{onecolentry}
 
