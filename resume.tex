@@ -3,8 +3,8 @@
 % Packages:
 \usepackage[
 		ignoreheadfoot, % set margins without considering header and footer
-		top=0.5 cm, % seperation between body and page edge from the top
-		bottom=0.5 cm, % seperation between body and page edge from the bottom
+		top=0.8 cm, % seperation between body and page edge from the top
+		bottom=0.8 cm, % seperation between body and page edge from the bottom
 		left=1.0 cm, % seperation between body and page edge from the left
 		right=1.0 cm, % seperation between body and page edge from the right
 		footskip=1.0 cm, % seperation between body and footer
@@ -63,10 +63,10 @@
 		-1pt
 }{
 		% top space:
-		0.3 cm
+		0.2 cm
 }{
 		% bottom space:
-		0.2 cm
+		0.15 cm
 } % section title spacing
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
@@ -182,9 +182,17 @@
 
 \end{header}
 
+\section{Summary}
+
+\begin{onecolentry}
+		Fullstack engineer and technical founder who ships production systems
+		end-to-end, from infrastructure to the consumer apps built on it, serving
+		thousands of users and processing millions in transaction volume.
+\end{onecolentry}
+
 \section{Work Experience}
 
-\begin{twocolentry}{Remote}
+\begin{twocolentry}{Chicago, IL}
 		\textbf{Challenger Fantasy}
 		\hrefWithoutArrow{https://challengerfantasy.com}{[\textcolor{blue}{Website}]}
 \end{twocolentry}
@@ -195,24 +203,23 @@
 \begin{onecolentry}
 		\begin{highlights}
 		\item Built and launched a fantasy sports platform end-to-end as technical founder;
-				designed the backend architecture, data infrastructure, API layer, and React Native
-				mobile app now serving
-				83 MAU at \textbf{challengerfantasy.com}.
-		\item Engineered a serverless real-time draft system using \textbf{Cloudflare Durable Objects};
-				built a stateful matchmaker routing users into isolated draft lobbies, each
-				guaranteeing strongly-consistent turn-based state across all connected WebSocket clients.
-		\item Designed an edge API layer with \textbf{Cloudflare Workers} serving typed DTOs with
-				edge caching; reduced P99 response times \textbf{92.5\%} (from \textbf{$\sim$8s to $\sim$600ms})
-				by pre-computing athlete stat aggregations into summary tables and materialized views.
-		\item Built a distributed data ingest pipeline on \textbf{Google Cloud Run} processing
-				19 years of historical sports data; runs daily refresh jobs with enforced referential
-				integrity and idempotent upserts to handle upstream data corrections.
-		\item Architected a \textbf{Bun workspaces} monorepo; configured end-to-end typegen
-				from database schemas to API clients.
+				designed the data infrastructure, REST API layer, CI/CD, and React Native mobile app
+				currently serving 83 monthly active users.
+		\item Engineered a serverless real-time draft engine using \textbf{Cloudflare Durable
+				Objects} and \textbf{WebSockets}; includes matching concurrent users into draft
+				lobbies, each managing strongly-consistent turn-based state.
+		\item Designed a REST API and data layer; used edge caching, summary tables, and
+				materialized views to reduce P99 response times \textbf{92.5\%} (from
+				\textbf{$\sim$8s to $\sim$600ms}).
+		\item Built an ETL pipeline with \textbf{Google Cloud Run} for processing 19 years of
+				historical sports data with daily refresh jobs and idempotent upserts to handle
+				upstream data corrections.
+		\item Established a monorepo with end-to-end type generation from database schemas to
+				API clients, prioritizing maintainable and scalable code across the stack.
 		\end{highlights}
 \end{onecolentry}
 
-\vspace{0.3 cm}
+\vspace{0.15 cm}
 
 \begin{twocolentry}{Remote}
 		\textbf{Mamo.bot}
@@ -224,18 +231,19 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
 		\begin{highlights}
-		\item Designed the multi-step onboarding flow with \textbf{React context} to automate
-				smart contract deployment, sign transactions, and skip steps based on wallet kind.
-		\item Reverse-engineered Telegram’s login widget to implement OAuth with a custom UI,
-				serving as a critical spam-prevention barrier and account access layer.
-		\item Partnered with UX designers to implement a seamless onboarding and deposit flow,
-				achieving \$1.3M in total value locked.
-		\item Established Sentry error tracking on 5 deployed services; led bug
-				classification and prioritization through production launch.
+		\item Partnered directly with UX designers to implement a production onboarding and deposit flow,
+				achieving \$1.3M in throughput.
+		\item Set up Sentry error monitoring on 5 deployed services and led bug
+				triage/prioritization post-launch.
+		\item Implemented a multi-step onboarding flow using React that dynamically branches
+				logic to automate smart contract deployment, sign transactions, and skip steps based
+				on user context.
+		\item Reverse-engineered a third-party OAuth integration to build a custom authentication layer,
+				serving as both a spam-prevention barrier and access-management system.
 		\end{highlights}
 \end{onecolentry}
 
-\vspace{0.3 cm}
+\vspace{0.15 cm}
 
 \begin{twocolentry}{Remote}
 		\textbf{Tribes Inc.}
@@ -247,23 +255,22 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
 		\begin{highlights}
-		\item Built a real-time chat engine using Socket.io and Node.js; implemented
+		\item Built a real-time chat engine (Socket.io/Node.js) with
 				rich-media features including reactions, GIFs, and metadata processing for Open
 				Graph/Twitter link previews.
-		\item Developed a cross-platform notification system using \textbf{Firebase Cloud
-				Messaging}; integrated with the browser Push API and a Telegram chatbot.
-		\item Streamlined development workflow by migrating 8 services to modular
-				\textbf{Turborepo packages}, reducing build times by 70\%.
+		\item Developed a cross-platform notification system (Firebase Cloud Messaging + Push
+				API + Telegram bot), integrating multiple systems into one automated alert pipeline.
+		\item Migrated 8 services to modular Turborepo packages, reducing build times by 70\%.
 		\item Contributed
 				\hrefWithoutArrow{https://github.com/elizaOS/eliza/commits?author=ncale}{\textcolor{blue}{2
-				features}} to the Eliza AI Agent Framework; expanded Telegram integration and
-				improved test coverage.
+				features}} to an open-source AI agent framework (Eliza), expanding integration and
+				test coverage.
 		\end{highlights}
 \end{onecolentry}
 
-\vspace{0.3 cm}
+\vspace{0.15 cm}
 
-\begin{twocolentry}{Remote}
+\begin{twocolentry}{Chicago, IL}
 		\textbf{Freelance}
 \end{twocolentry}
 \begin{twocolentry}{Jan 2024 - Nov 2024}
@@ -272,21 +279,18 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
 		\begin{highlights}
-		\item Developed 3 web3 projects accumulating 300+ unique users and
-				\hrefWithoutArrow{https://nickbrodeur.net/snippets/2024-grants}{\textcolor{blue}{\$42.5k
-				in grants}}; projects included a DAO delegate explorer webapp, a decentralized
-				peer-to-peer betting app, and a
-				decentralized prediction game.
-		\item Open sourced
+		\item Developed 3 independent software projects from concept to production, securing
+				\hrefWithoutArrow{https://nickbrodeur.net/snippets/2024-grants}{\textcolor{blue}{\$42.5k}}
+				in grant funding.
+		\item Open-sourced an
 				\hrefWithoutArrow{https://github.com/namestonehq/namestone-sdk}
-				{\textcolor{blue}{namestone-sdk}},
-				which was adopted as NameStone's official SDK and peaked at
-				\hrefWithoutArrow{https://www.npmjs.com/package/@namestone/namestone-sdk}{\textcolor{blue}{1.2k
-				weekly downloads}} on npm.
+				{\textcolor{blue}{SDK}} adopted as a company's official developer tool, reaching
+				\hrefWithoutArrow{https://www.npmjs.com/package/@namestone/namestone-sdk}{\textcolor{blue}{1.2k}}
+				weekly npm downloads.
 		\end{highlights}
 \end{onecolentry}
 
-\vspace{0.3 cm}
+\vspace{0.15 cm}
 
 \begin{twocolentry}{Chicago, IL}
 		\textbf{Deloitte Consulting}
@@ -297,14 +301,15 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
 		\begin{highlights}
-		\item Consulted for 6 global companies performing multi-million dollar software
-				migrations; maintained an 87\% utilization rate.
-		\item Developed custom Excel and PowerPoint frameworks for translating client data
-				into resource models and presentations.
+		\item Consulted across 6 global companies on large-scale software migrations while
+				maintaining 87\% utilization.
+		\item Built Power BI dashboards and Excel resource models to translate raw client data
+				into analytical frameworks.
+		\item Condensed analysis into key findings and decision-ready recommendations for executive
+				stakeholders via PowerPoint.
 		\end{highlights}
 \end{onecolentry}
 
-\vspace{8 pt - 0.3 cm}
 \section{Education}
 
 \begin{twocolentry}{Aug 2018 – May 2022}
@@ -313,37 +318,21 @@
 \vspace{0.10 cm}
 \begin{onecolentry}
 		\begin{highlights}
-		\item \textbf{GPA}: 3.9/4.0; \textbf{Coursework}: Business, data mining, information science, and
-				programming fundamentals
+		\item \textbf{GPA}: 3.9/4.0; \textbf{Relevant Coursework}: Data mining, information science,
+				database design, and programming fundamentals
 		\end{highlights}
 \end{onecolentry}
 
-\vspace{8 pt - 0.3 cm}
 \section{Skills}
 
 \begin{onecolentry}
 		\begin{highlights}
 		\item \textbf{Languages}: Typescript, Python, SQL; \textbf{Web
-				Frameworks}: Express, Hono, FastAPI, Next.js, React
-		\item \textbf{Infra}: Cloudflare Workers, serverless, Ubuntu Linux, Docker, Proxmox;
-				\textbf{Tools}: Git,
-				Bash, GitHub Actions
-		\end{highlights}
-\end{onecolentry}
-
-\vspace{8 pt - 0.3 cm}
-\section{Selected Projects}
-
-\begin{onecolentry}
-		\textbf{artgg — Art Gallery Generator} [Rust, Python, SQLite, GitHub Actions]
-		\hrefWithoutArrow{https://github.com/ncale/artgg}{[\textcolor{blue}{Code}]}
-\end{onecolentry}
-\vspace{0.10 cm}
-\begin{onecolentry}
-		\begin{highlights}
-		\item TUI that generates desktop wallpapers from open-access museum artwork, with local
-				caching and user configuration.
-		\item Implemented a versioned release pipeline with GitHub Actions for one-line installation.
+				Frameworks}: Express, Hono, FastAPI, Next.js, React.js
+		\item \textbf{Skills}: REST API design, GraphQL, ETL data pipelines, CI/CD, serverless
+				architecture, real-time systems
+		\item \textbf{Infra/Tools}: Cloudflare Workers, Docker, Git, Bash, GitHub Actions,
+				PostgreSQL, Redis, Sentry, Fedora Linux, GCP
 		\end{highlights}
 \end{onecolentry}
 
