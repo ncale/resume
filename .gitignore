@@ -1,2 +1,11 @@
 # Ignore the local build dir
 /build/
+
+# Compiled PDFs are built in CI and deployed, not committed
+*.pdf
+
+# Wrangler local state
+.wrangler/
+
+# Wrangler cache
+node_modules/

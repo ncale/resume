@@ -1,0 +1,14 @@
+{
+	"name": "resume",
+	"compatibility_date": "2026-10-01",
+	// Static assets only, no Worker script. CI copies the compiled PDF into public/.
+	"assets": {
+		"directory": "./public"
+	},
+	"routes": [
+		{
+			"pattern": "resume.nickbrodeur.net",
+			"custom_domain": true
+		}
+	]
+}

@@ -20,9 +20,8 @@ pdflatex -output-directory=build resume.tex
 
 ## Automated Build
 
-Every time a change is pushed to **master**, GitHub Actions automatically:
+On every push, GitHub Actions compiles `resume.tex` using [latex-action](https://github.com/xu-cheng/latex-action), so a broken build fails on any branch.
 
-1. Compiles `resume.tex` to pdf using [latex-action](https://github.com/xu-cheng/latex-action).
-2. Commits and pushes the compiled result.
+On **main**, the compiled PDF is also deployed to Cloudflare Workers (static assets, configured in `wrangler.jsonc`). The latest version is always available at [resume.nickbrodeur.net](https://resume.nickbrodeur.net).
 
-The latest version is always available here: [resume.pdf](https://ncale.github.io/resume/resume.pdf)
+Deploying requires the `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repository secrets.
